@@ -43,7 +43,7 @@ class Test2:
                 #await self.bot.send_message(channel, "It is to some degree not Wednesday my dudes.")
                 return
 
-            if triggered = 1:
+            if triggered == 1:
                 return 
             
             self.triggered = 1
