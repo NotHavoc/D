@@ -23,7 +23,7 @@ class Test2:
         #Your code will go here
         await self.bot.say("I can do stuff!")
         
-    async def on_message(message):
+    async def on_message(self, message):
         """channel = message.channel
         author = message.author
 
