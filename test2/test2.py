@@ -12,7 +12,6 @@ from random import choice
 
 class Test2:
     """My custom cog that does stuff!"""
-    triggered
 
     def __init__(self, bot):
         self.bot = bot
