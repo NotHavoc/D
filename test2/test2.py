@@ -26,7 +26,7 @@ class Test2:
         await self.bot.say(str)
         
     async def on_message(self, message):
-        try
+       # try
             channel = message.channel
             author = message.author
 
