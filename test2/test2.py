@@ -17,9 +17,24 @@ class Test2:
     @commands.command()
     async def mycom(self):
         """This does stuff!"""
-
+        str = "I can do stuff
         #Your code will go here
         await self.bot.say("I can do stuff!")
+        
+    async def on_message(self, message):
+        channel = message.channel
+        author = message.author
+
+        if message.server is None:
+            return
+
+        if author == self.bot.user:
+            return
+
+        if not self.bot.user_allowed(message):
+            return
+
+        await self.bot.say("does this do shit now?")
 
 def setup(bot):
     bot.add_cog(Test2(bot))
