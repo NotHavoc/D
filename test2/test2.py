@@ -21,7 +21,7 @@ class Test2:
     @commands.command()
     async def test(self):
         """This does stuff!"""
-        str = "I can do stuff
+        str = "I can do stuff"
         #Your code will go here
         await self.bot.say(str)
         
