@@ -15,7 +15,7 @@ class Test2:
 
     def __init__(self, bot):
         self.bot = bot
-        self.triggered = false
+        self.triggered = 0
          
 
     @commands.command()
@@ -39,11 +39,11 @@ class Test2:
                 return
 
             if datetime.datetime.now().isoweekday() != 3:
-                self.triggered = false
+                self.triggered = 0
                 await self.bot.say("It is to some degree not Wednesday my dudes.")
                 return
 
-            self.triggered = true
+            self.triggered = 1
             await self.bot.say("It is Wednesday my dudes.")    
 
 def setup(bot):
