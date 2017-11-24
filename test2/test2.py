@@ -38,7 +38,7 @@ class Test2:
             if not self.bot.user_allowed(message):
                 return
 
-            if datetime.datetime.now().isoweekday() != 3
+            if datetime.datetime.now().isoweekday() != 3:
                 self.triggered = false
                 await self.bot.say("It is to some degree not Wednesday my dudes.")
                 return
