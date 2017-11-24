@@ -21,8 +21,8 @@ class Test2:
         #Your code will go here
         await self.bot.say("I can do stuff!")
         
-    async def on_message(self, message):
-        channel = message.channel
+    async def on_message(message):
+        """channel = message.channel
         author = message.author
 
         if message.server is None:
@@ -33,7 +33,7 @@ class Test2:
 
         if not self.bot.user_allowed(message):
             return
-
+                """
         await self.bot.say("does this do shit now?")
 
 def setup(bot):
