@@ -26,26 +26,27 @@ class Test2:
         await self.bot.say(str)
         
     async def on_message(self, message):
-        channel = message.channel
-        author = message.author
+        try
+            channel = message.channel
+            author = message.author
 
-        if message.server is None:
-            return
+            if message.server is None:
+                return
 
-        if author == self.bot.user:
-            return
+            if author == self.bot.user:
+                return
 
-        if not self.bot.user_allowed(message):
-            return
-        
-        day = datetime.datetime.now().isoweekday()
-        
-        if day != 3
-            self.triggered = false
-            return
-        
-        self.triggered = true
-        await self.bot.say("It is Wednesday my dudes.")    
+            if not self.bot.user_allowed(message):
+                return
+
+            day = datetime.datetime.now().isoweekday()
+
+            if day != 3
+                self.triggered = false
+                return
+
+            self.triggered = true
+            await self.bot.say("It is Wednesday my dudes.")    
 
 def setup(bot):
     bot.add_cog(Test2(bot))
