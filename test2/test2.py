@@ -2,6 +2,8 @@ import os
 import discord
 import datetime
 import copy
+import asyncio
+import re
 from discord.ext import commands
 from cogs.utils import checks
 from cogs.utils.dataIO import dataIO
