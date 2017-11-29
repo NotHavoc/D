@@ -16,7 +16,6 @@ class Test2:
     def __init__(self, bot):
         self.bot = bot
         self.triggered = 0
-         
 
     @commands.command()
     async def test(self):
