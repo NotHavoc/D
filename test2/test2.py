@@ -31,17 +31,20 @@ class Test2:
             author = message.author
 
             if message.server is None:
+                await self.bot.send_message(channel, "message.server is None my dudes.")  
                 return
 
             if author == self.bot.user:
+                await self.bot.send_message(channel, "author == self.bot.user my dudes.")  
                 return
 
             if not self.bot.user_allowed(message):
+                await self.bot.send_message(channel, "not self.bot.user_allowed(message) my dudes.")  
                 return
 
             if datetime.datetime.now().isoweekday() != 3:
                 self.triggered = 0
-                #await self.bot.send_message(channel, "It is to some degree not Wednesday my dudes.")
+                await self.bot.send_message(channel, "datetime.datetime.now().isoweekday() != 3 my dudes.")
                 return
 
             if triggered == 0:            
