@@ -44,11 +44,9 @@ class Test2:
                 #await self.bot.send_message(channel, "It is to some degree not Wednesday my dudes.")
                 return
 
-            if triggered == 1:
-                return 
-            
-            await self.bot.send_message(channel, "It is Wednesday my dudes.")    
-            self.triggered = 1
+            if triggered == 0:            
+                await self.bot.send_message(channel, "It is Wednesday my dudes.")    
+                self.triggered = 1
 
 def setup(bot):
     bot.add_cog(Test2(bot))
