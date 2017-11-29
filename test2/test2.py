@@ -21,9 +21,10 @@ class Test2:
     @commands.command()
     async def test(self):
         """This does stuff!"""
-        str = "I can do stuff"
+        str = "Triggered value:"
         #Your code will go here
         await self.bot.say(str)
+        await self.bot.say(self.triggered)
         
     async def on_message(self, message):
             channel = message.channel
