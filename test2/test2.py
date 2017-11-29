@@ -31,11 +31,11 @@ class Test2:
             author = message.author
 
             if message.server is None:
-                await self.bot.send_message(channel, "message.server is None my dudes.")  
+                #await self.bot.send_message(channel, "message.server is None my dudes.")  
                 return
 
             if author == self.bot.user:
-                await self.bot.send_message(channel, "author == self.bot.user my dudes.")  
+                #await self.bot.send_message(channel, "author == self.bot.user my dudes.")  
                 return
 
             if not self.bot.user_allowed(message):
