@@ -39,7 +39,7 @@ class Test2:
                 return
 
             if not self.bot.user_allowed(message):
-                await self.bot.send_message(channel, "not self.bot.user_allowed(message) my dudes.")  
+                #await self.bot.send_message(channel, "not self.bot.user_allowed(message) my dudes.")  
                 return
 
             if datetime.datetime.now().isoweekday() != 3:
