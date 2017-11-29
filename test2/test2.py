@@ -44,7 +44,7 @@ class Test2:
 
             if datetime.datetime.now().isoweekday() != 3:
                 self.triggered = 0
-                await self.bot.send_message(channel, "datetime.datetime.now().isoweekday() != 3 my dudes.")
+                #await self.bot.send_message(channel, "datetime.datetime.now().isoweekday() != 3 my dudes.")
                 return
 
             if self.triggered == 0:            
