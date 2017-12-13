@@ -46,9 +46,6 @@ class Test2:
                 #await self.bot.send_message(channel, "datetime.datetime.now().isoweekday() != 3 my dudes.")
                 return
 
-            if datetime.datetime.now().hour() < 6:
-                return
-            
             if self.triggered == 0:            
                 await self.bot.send_message(channel, "It is Wednesday my dudes.")    
                 self.triggered = 1
