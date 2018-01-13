@@ -18,6 +18,7 @@ class GwentDuel:
 
     @commands.command(pass_context=True, no_pm=False)
     async def gduel(self, ctx):
+        await self.bot.say("may or may not be working")
         values = ctx.split(' ')
 
         if values.length < 4:
