@@ -21,7 +21,7 @@ class GwentDuel:
         values = ctx.split(' ')
 
         if values.length < 4:
-            await bot.say("Failed. Call command with power and armor of the two respective units space deliniated")
+            await self.bot.say("Failed. Call command with power and armor of the two respective units space deliniated")
             return
 
         atkPower = values.pop(0)
@@ -44,10 +44,10 @@ class GwentDuel:
                 else:
                     atkPower -= defPower
 
-        await bot.say("Attacker Power: " + atkPower)
-        await bot.say("Attacker Armor: " + atkArmor)
-        await bot.say("Defender Power: " + defPower)
-        await bot.say("Defender Armor: " + defPower)
+        await self.bot.say("Attacker Power: " + atkPower)
+        await self.bot.say("Attacker Armor: " + atkArmor)
+        await self.bot.say("Defender Power: " + defPower)
+        await self.bot.say("Defender Armor: " + defPower)
         
 
 def setup(bot):
