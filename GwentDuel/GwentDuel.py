@@ -13,9 +13,8 @@ from random import choice
 class GwentDuel:
     """My custom cog that does stuff!"""
 
-    def __init__(self, bot):
-        self.bot = bot
-        self.triggered = 0
+//    def __init__(self, bot):
+ //       self.bot = bot
 
     @commands.command(pass_context=True, no_pm=False)
     async def gduel(self, ctx):
