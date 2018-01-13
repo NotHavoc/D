@@ -10,7 +10,7 @@ from cogs.utils.dataIO import dataIO
 from cogs.utils.chat_formatting import box, pagify, escape_mass_mentions
 from random import choice
 
-class GwentDuel:
+class gwentDuel:
     """My custom cog that does stuff!"""
 
     def __init__(self, bot):
